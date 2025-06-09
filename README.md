@@ -169,7 +169,7 @@ https://www.figma.com/design/2PZLV68pGB9oOBMS4y9WfM/Intego360?node-id=1-2&p=f&t=
 ## Deployment Plan
 
 1. **Backend Deployment**:
-   - Deploy the Django backend on a cloud platform like AWS, Heroku, or DigitalOcean.
+   - Deploy the Django backend on a cloud platform like Heroku or DigitalOcean.
    - Set up a production database (e.g., PostgreSQL).
    - Configure environment variables for production.
 
@@ -178,7 +178,7 @@ https://www.figma.com/design/2PZLV68pGB9oOBMS4y9WfM/Intego360?node-id=1-2&p=f&t=
    - Deploy the built files on a static hosting service like Netlify, Vercel, or AWS S3.
 
 3. **Domain and SSL**:
-   - Set up a custom domain for your application.
+   - Set up a custom domain for my  application.
    - Configure SSL certificates for secure HTTPS connections.
 
 4. **Monitoring and Maintenance**:
