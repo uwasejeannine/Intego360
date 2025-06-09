@@ -189,7 +189,7 @@ Replace `your_secret_key_here` and `your_database_url_here` with your actual sec
 ## Deployment Plan
 
 1. **Backend Deployment**:
-   - Deploy the Django backend on a cloud platform like AWS, Heroku, or DigitalOcean.
+   - Deploy the Django backend on a cloud platform like Heroku or DigitalOcean.
    - Set up a production database (e.g., PostgreSQL).
    - Configure environment variables for production.
 
@@ -198,7 +198,7 @@ Replace `your_secret_key_here` and `your_database_url_here` with your actual sec
    - Deploy the built files on a static hosting service like Netlify, Vercel, or AWS S3.
 
 3. **Domain and SSL**:
-   - Set up a custom domain for your application.
+   - Set up a custom domain for my  application.
    - Configure SSL certificates for secure HTTPS connections.
 
 4. **Monitoring and Maintenance**:
