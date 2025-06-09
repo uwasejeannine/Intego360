@@ -1,6 +1,7 @@
 // Export all pages from a single file for easier imports
 export { default as Dashboard } from './Dashboard';
 export { default as Agriculture } from './Agriculture';
+export { default as Farmers } from './agriculture/Farmers';
 export { default as Health } from './Health';
 export { default as Education } from './Education';
 export { default as Alerts } from './Alerts';

@@ -32,7 +32,7 @@ type SectorNavLink = { name: string; href: string; icon: React.ComponentType<any
 const sectorNav: Record<Sector, SectorNavLink[]> = {
   agriculture: [
     { name: 'Overview', href: '/agriculture', icon: ChartBarIcon },
-    { name: 'Farmers', href: '/agriculture/farmers', icon: UsersIcon },
+    { name: 'Farmers', href: '/farmers', icon: UsersIcon }, // Updated to match your routing
     { name: 'Crops', href: '/agriculture/crops', icon: MapPinIcon },
     { name: 'Cooperatives', href: '/agriculture/cooperatives', icon: UserGroupIcon },
   ],
@@ -57,11 +57,15 @@ const Sidebar = () => {
   const [sectorDropdownOpen, setSectorDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  // Determine current sector from URL
+  // Determine current sector from URL - Updated to include farmers page
   let currentSector: Sector | null = null;
-  if (location.pathname.startsWith('/agriculture')) currentSector = 'agriculture';
-  else if (location.pathname.startsWith('/health')) currentSector = 'health';
-  else if (location.pathname.startsWith('/education')) currentSector = 'education';
+  if (location.pathname.startsWith('/agriculture') || location.pathname === '/farmers') {
+    currentSector = 'agriculture';
+  } else if (location.pathname.startsWith('/health')) {
+    currentSector = 'health';
+  } else if (location.pathname.startsWith('/education')) {
+    currentSector = 'education';
+  }
 
   // Set selected sector based on current route
   useEffect(() => {
@@ -95,8 +99,6 @@ const Sidebar = () => {
 
   return (
     <aside className="bg-white min-h-screen w-64 flex flex-col shadow-lg border-r border-gray-200">
-
-
       {/* Navigation */}
       <nav className="flex-1 px-4 py-6 space-y-6">
         {/* Quick Links */}

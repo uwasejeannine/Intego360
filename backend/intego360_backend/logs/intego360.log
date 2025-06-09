@@ -7054,3 +7054,599 @@ Traceback (most recent call last):
     import redis
 ModuleNotFoundError: No module named 'redis'
 ERROR 2025-06-09 08:42:10,321 basehttp 12904 3752 "GET /api/v1/auth/dashboard/overview/ HTTP/1.1" 500 120658
+INFO 2025-06-09 10:11:41,939 autoreload 20540 10340 Watching for file changes with StatReloader
+WARNING 2025-06-09 10:12:17,343 log 20540 27340 Unauthorized: /api/v1/auth/dashboard/recent_activities/
+WARNING 2025-06-09 10:12:17,344 log 20540 13212 Unauthorized: /api/v1/auth/dashboard/overview/
+WARNING 2025-06-09 10:12:17,347 basehttp 20540 27340 "GET /api/v1/auth/dashboard/recent_activities/ HTTP/1.1" 401 172
+WARNING 2025-06-09 10:12:17,347 basehttp 20540 13212 "GET /api/v1/auth/dashboard/overview/ HTTP/1.1" 401 172
+INFO 2025-06-09 10:12:17,399 basehttp 20540 13212 "OPTIONS /api/v1/auth/refresh/ HTTP/1.1" 200 0
+INFO 2025-06-09 10:12:17,399 basehttp 20540 27340 "OPTIONS /api/v1/auth/refresh/ HTTP/1.1" 200 0
+ERROR 2025-06-09 10:12:17,787 log 20540 27340 Internal Server Error: /api/v1/auth/refresh/
+Traceback (most recent call last):
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework_simplejwt\views.py", line 44, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework_simplejwt\serializers.py", line 141, in validate
+    refresh.outstand()
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework_simplejwt\tokens.py", line 222, in outstand
+    return OutstandingToken.objects.get_or_create(
+AttributeError: type object 'OutstandingToken' has no attribute 'objects'
+ERROR 2025-06-09 10:12:17,790 log 20540 13212 Internal Server Error: /api/v1/auth/refresh/
+Traceback (most recent call last):
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework_simplejwt\views.py", line 44, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework_simplejwt\serializers.py", line 141, in validate
+    refresh.outstand()
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework_simplejwt\tokens.py", line 222, in outstand
+    return OutstandingToken.objects.get_or_create(
+AttributeError: type object 'OutstandingToken' has no attribute 'objects'
+ERROR 2025-06-09 10:12:17,802 basehttp 20540 27340 "POST /api/v1/auth/refresh/ HTTP/1.1" 500 123574
+ERROR 2025-06-09 10:12:17,806 basehttp 20540 13212 "POST /api/v1/auth/refresh/ HTTP/1.1" 500 123574
+INFO 2025-06-09 10:13:57,338 autoreload 6180 2924 Watching for file changes with StatReloader
+WARNING 2025-06-09 10:15:42,380 log 6180 11772 Unauthorized: /api/v1/auth/dashboard/recent_activities/
+WARNING 2025-06-09 10:15:42,382 log 6180 13628 Unauthorized: /api/v1/auth/dashboard/overview/
+WARNING 2025-06-09 10:15:42,386 basehttp 6180 11772 "GET /api/v1/auth/dashboard/recent_activities/ HTTP/1.1" 401 58
+WARNING 2025-06-09 10:15:42,392 basehttp 6180 13628 "GET /api/v1/auth/dashboard/overview/ HTTP/1.1" 401 58
+WARNING 2025-06-09 10:15:43,428 log 6180 13628 Unauthorized: /api/v1/auth/dashboard/recent_activities/
+WARNING 2025-06-09 10:15:43,430 basehttp 6180 13628 "GET /api/v1/auth/dashboard/recent_activities/ HTTP/1.1" 401 58
+WARNING 2025-06-09 10:15:44,427 log 6180 13628 Unauthorized: /api/v1/auth/dashboard/overview/
+WARNING 2025-06-09 10:15:44,429 basehttp 6180 13628 "GET /api/v1/auth/dashboard/overview/ HTTP/1.1" 401 58
+WARNING 2025-06-09 10:15:45,457 log 6180 13628 Unauthorized: /api/v1/auth/dashboard/recent_activities/
+WARNING 2025-06-09 10:15:45,460 basehttp 6180 13628 "GET /api/v1/auth/dashboard/recent_activities/ HTTP/1.1" 401 58
+WARNING 2025-06-09 10:15:55,885 log 6180 28200 Unauthorized: /api/v1/auth/dashboard/recent_activities/
+WARNING 2025-06-09 10:15:55,889 log 6180 11712 Unauthorized: /api/v1/auth/dashboard/overview/
+WARNING 2025-06-09 10:15:55,892 basehttp 6180 28200 "GET /api/v1/auth/dashboard/recent_activities/ HTTP/1.1" 401 58
+WARNING 2025-06-09 10:15:55,894 basehttp 6180 11712 "GET /api/v1/auth/dashboard/overview/ HTTP/1.1" 401 58
+WARNING 2025-06-09 10:15:56,292 log 6180 11712 Unauthorized: /api/v1/auth/dashboard/recent_activities/
+WARNING 2025-06-09 10:15:56,295 log 6180 28200 Unauthorized: /api/v1/auth/dashboard/overview/
+WARNING 2025-06-09 10:15:56,299 basehttp 6180 11712 "GET /api/v1/auth/dashboard/recent_activities/ HTTP/1.1" 401 58
+WARNING 2025-06-09 10:15:56,307 basehttp 6180 28200 "GET /api/v1/auth/dashboard/overview/ HTTP/1.1" 401 58
+WARNING 2025-06-09 10:16:06,517 log 6180 6720 Unauthorized: /api/v1/auth/dashboard/overview/
+WARNING 2025-06-09 10:16:06,525 log 6180 16052 Unauthorized: /api/v1/auth/dashboard/recent_activities/
+WARNING 2025-06-09 10:16:06,528 basehttp 6180 6720 "GET /api/v1/auth/dashboard/overview/ HTTP/1.1" 401 58
+WARNING 2025-06-09 10:16:06,530 basehttp 6180 16052 "GET /api/v1/auth/dashboard/recent_activities/ HTTP/1.1" 401 58
+WARNING 2025-06-09 10:16:08,553 log 6180 16052 Unauthorized: /api/v1/auth/dashboard/recent_activities/
+WARNING 2025-06-09 10:16:08,554 basehttp 6180 16052 "GET /api/v1/auth/dashboard/recent_activities/ HTTP/1.1" 401 58
+INFO 2025-06-09 10:16:27,658 basehttp 6180 16628 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 10:16:27,887 basehttp 6180 16628 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 10:16:28,683 basehttp 6180 18596 "OPTIONS /api/v1/auth/dashboard/log_view/ HTTP/1.1" 200 0
+INFO 2025-06-09 10:16:28,684 basehttp 6180 13228 "OPTIONS /api/v1/auth/dashboard/log_view/ HTTP/1.1" 200 0
+INFO 2025-06-09 10:16:28,796 basehttp 6180 10968 "GET /api/v1/auth/dashboard/recent_activities/ HTTP/1.1" 200 4353
+ERROR 2025-06-09 10:16:29,124 log 6180 16628 Internal Server Error: /api/v1/auth/dashboard/overview/
+Traceback (most recent call last):
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\apps\authentication\views.py", line 601, in overview
+    stats = cache.get(cache_key)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\cache\backends\redis.py", line 188, in get
+    return self._cache.get(key, default)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\cache\backends\redis.py", line 173, in _cache
+    return self._class(self._servers, **self._options)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\cache\backends\redis.py", line 40, in __init__
+    import redis
+ModuleNotFoundError: No module named 'redis'
+ERROR 2025-06-09 10:16:29,154 basehttp 6180 16628 "GET /api/v1/auth/dashboard/overview/ HTTP/1.1" 500 120424
+INFO 2025-06-09 10:16:29,184 basehttp 6180 18596 "POST /api/v1/auth/dashboard/log_view/ HTTP/1.1" 200 35
+INFO 2025-06-09 10:16:29,286 basehttp 6180 13228 "POST /api/v1/auth/dashboard/log_view/ HTTP/1.1" 200 35
+ERROR 2025-06-09 10:16:30,861 log 6180 13228 Internal Server Error: /api/v1/auth/dashboard/overview/
+Traceback (most recent call last):
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\apps\authentication\views.py", line 601, in overview
+    stats = cache.get(cache_key)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\cache\backends\redis.py", line 188, in get
+    return self._cache.get(key, default)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\cache\backends\redis.py", line 173, in _cache
+    return self._class(self._servers, **self._options)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\cache\backends\redis.py", line 40, in __init__
+    import redis
+ModuleNotFoundError: No module named 'redis'
+ERROR 2025-06-09 10:16:30,874 basehttp 6180 13228 "GET /api/v1/auth/dashboard/overview/ HTTP/1.1" 500 120424
+WARNING 2025-06-09 10:16:31,655 log 6180 12964 Not Found: /main.ec4a9ce0b549b31b21e6.hot-update.json
+WARNING 2025-06-09 10:16:31,673 basehttp 6180 12964 "GET /main.ec4a9ce0b549b31b21e6.hot-update.json HTTP/1.1" 404 4281
+WARNING 2025-06-09 10:16:33,568 log 6180 24276 Not Found: /main.ec4a9ce0b549b31b21e6.hot-update.json
+WARNING 2025-06-09 10:16:33,572 basehttp 6180 24276 "GET /main.ec4a9ce0b549b31b21e6.hot-update.json HTTP/1.1" 404 4281
+WARNING 2025-06-09 10:16:54,969 log 6180 18520 Not Found: /api/placeholder/16/12
+WARNING 2025-06-09 10:16:54,975 basehttp 6180 18520 "GET /api/placeholder/16/12 HTTP/1.1" 404 4221
+ERROR 2025-06-09 10:18:01,993 log 6180 16628 Internal Server Error: /api/v1/auth/dashboard/overview/
+Traceback (most recent call last):
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\apps\authentication\views.py", line 601, in overview
+    stats = cache.get(cache_key)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\cache\backends\redis.py", line 188, in get
+    return self._cache.get(key, default)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\cache\backends\redis.py", line 173, in _cache
+    return self._class(self._servers, **self._options)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\cache\backends\redis.py", line 40, in __init__
+    import redis
+ModuleNotFoundError: No module named 'redis'
+ERROR 2025-06-09 10:18:02,009 basehttp 6180 16628 "GET /api/v1/auth/dashboard/overview/ HTTP/1.1" 500 120424
+INFO 2025-06-09 10:18:02,012 basehttp 6180 10968 "POST /api/v1/auth/dashboard/log_view/ HTTP/1.1" 200 35
+INFO 2025-06-09 10:18:02,033 basehttp 6180 13228 "GET /api/v1/auth/dashboard/recent_activities/ HTTP/1.1" 200 4325
+INFO 2025-06-09 10:18:02,062 basehttp 6180 18596 "POST /api/v1/auth/dashboard/log_view/ HTTP/1.1" 200 35
+ERROR 2025-06-09 10:18:03,136 log 6180 18596 Internal Server Error: /api/v1/auth/dashboard/overview/
+Traceback (most recent call last):
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\apps\authentication\views.py", line 601, in overview
+    stats = cache.get(cache_key)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\cache\backends\redis.py", line 188, in get
+    return self._cache.get(key, default)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\cache\backends\redis.py", line 173, in _cache
+    return self._class(self._servers, **self._options)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\cache\backends\redis.py", line 40, in __init__
+    import redis
+ModuleNotFoundError: No module named 'redis'
+ERROR 2025-06-09 10:18:03,140 basehttp 6180 18596 "GET /api/v1/auth/dashboard/overview/ HTTP/1.1" 500 120424
+WARNING 2025-06-09 10:25:11,914 log 6180 11016 Unauthorized: /api/v1/auth/users/me/
+WARNING 2025-06-09 10:25:11,922 basehttp 6180 11016 "GET /api/v1/auth/users/me/ HTTP/1.1" 401 172
+WARNING 2025-06-09 10:25:11,933 log 6180 11016 Unauthorized: /api/v1/auth/users/me/
+WARNING 2025-06-09 10:25:11,934 basehttp 6180 11016 "GET /api/v1/auth/users/me/ HTTP/1.1" 401 172
+INFO 2025-06-09 10:25:11,941 basehttp 6180 11016 "OPTIONS /api/v1/auth/refresh/ HTTP/1.1" 200 0
+INFO 2025-06-09 10:25:11,947 basehttp 6180 11016 "OPTIONS /api/v1/auth/refresh/ HTTP/1.1" 200 0
+ERROR 2025-06-09 10:25:12,240 log 6180 14876 Internal Server Error: /api/v1/auth/refresh/
+Traceback (most recent call last):
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework_simplejwt\views.py", line 44, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework_simplejwt\serializers.py", line 141, in validate
+    refresh.outstand()
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework_simplejwt\tokens.py", line 222, in outstand
+    return OutstandingToken.objects.get_or_create(
+AttributeError: type object 'OutstandingToken' has no attribute 'objects'
+ERROR 2025-06-09 10:25:12,271 log 6180 11016 Internal Server Error: /api/v1/auth/refresh/
+Traceback (most recent call last):
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework_simplejwt\views.py", line 44, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework_simplejwt\serializers.py", line 141, in validate
+    refresh.outstand()
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework_simplejwt\tokens.py", line 222, in outstand
+    return OutstandingToken.objects.get_or_create(
+AttributeError: type object 'OutstandingToken' has no attribute 'objects'
+ERROR 2025-06-09 10:25:12,281 basehttp 6180 14876 "POST /api/v1/auth/refresh/ HTTP/1.1" 500 123539
+ERROR 2025-06-09 10:25:12,283 basehttp 6180 11016 "POST /api/v1/auth/refresh/ HTTP/1.1" 500 123539
+ERROR 2025-06-09 10:25:12,520 log 6180 14876 Internal Server Error: /api/v1/auth/refresh/
+Traceback (most recent call last):
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework_simplejwt\views.py", line 44, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework_simplejwt\serializers.py", line 141, in validate
+    refresh.outstand()
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework_simplejwt\tokens.py", line 222, in outstand
+    return OutstandingToken.objects.get_or_create(
+AttributeError: type object 'OutstandingToken' has no attribute 'objects'
+ERROR 2025-06-09 10:25:12,529 basehttp 6180 14876 "POST /api/v1/auth/refresh/ HTTP/1.1" 500 123539
+ERROR 2025-06-09 10:25:12,614 log 6180 11016 Internal Server Error: /api/v1/auth/refresh/
+Traceback (most recent call last):
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework_simplejwt\views.py", line 44, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework_simplejwt\serializers.py", line 141, in validate
+    refresh.outstand()
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework_simplejwt\tokens.py", line 222, in outstand
+    return OutstandingToken.objects.get_or_create(
+AttributeError: type object 'OutstandingToken' has no attribute 'objects'
+ERROR 2025-06-09 10:25:12,624 basehttp 6180 11016 "POST /api/v1/auth/refresh/ HTTP/1.1" 500 123539
+INFO 2025-06-09 10:25:19,778 basehttp 6180 3256 "OPTIONS /api/v1/auth/login/ HTTP/1.1" 200 0
+INFO 2025-06-09 10:25:19,791 views 6180 3256 Login attempt - Headers: {'Content-Length': '69', 'Content-Type': 'application/json', 'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Google Chrome";v="137", "Chromium";v="137", "Not/A)Brand";v="24"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:3000', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:3000/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9'}
+INFO 2025-06-09 10:25:19,793 views 6180 3256 Login attempt - Body: b'{"username":"Jeannine","password":"GanzAfrica6!","remember_me":false}'
+INFO 2025-06-09 10:25:19,794 views 6180 3256 Login attempt - Data: {'username': 'Jeannine', 'password': 'GanzAfrica6!', 'remember_me': False}
+INFO 2025-06-09 10:25:19,795 views 6180 3256 Login attempt - Content-Type: application/json
+INFO 2025-06-09 10:25:19,797 views 6180 3256 Serializer data: {'username': 'Jeannine', 'password': 'GanzAfrica6!', 'remember_me': False}
+INFO 2025-06-09 10:25:20,380 basehttp 6180 3256 "POST /api/v1/auth/login/ HTTP/1.1" 200 836
+ERROR 2025-06-09 10:25:20,596 log 6180 8348 Internal Server Error: /api/v1/auth/dashboard/overview/
+Traceback (most recent call last):
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\apps\authentication\views.py", line 601, in overview
+    stats = cache.get(cache_key)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\cache\backends\redis.py", line 188, in get
+    return self._cache.get(key, default)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\cache\backends\redis.py", line 173, in _cache
+    return self._class(self._servers, **self._options)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\cache\backends\redis.py", line 40, in __init__
+    import redis
+ModuleNotFoundError: No module named 'redis'
+ERROR 2025-06-09 10:25:20,618 basehttp 6180 8348 "GET /api/v1/auth/dashboard/overview/ HTTP/1.1" 500 120424
+INFO 2025-06-09 10:25:20,639 basehttp 6180 3256 "POST /api/v1/auth/dashboard/log_view/ HTTP/1.1" 200 35
+INFO 2025-06-09 10:25:20,639 basehttp 6180 13500 "POST /api/v1/auth/dashboard/log_view/ HTTP/1.1" 200 35
+INFO 2025-06-09 10:25:20,655 basehttp 6180 12512 "GET /api/v1/auth/dashboard/recent_activities/ HTTP/1.1" 200 4299
+ERROR 2025-06-09 10:25:21,786 log 6180 12512 Internal Server Error: /api/v1/auth/dashboard/overview/
+Traceback (most recent call last):
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\apps\authentication\views.py", line 601, in overview
+    stats = cache.get(cache_key)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\cache\backends\redis.py", line 188, in get
+    return self._cache.get(key, default)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\cache\backends\redis.py", line 173, in _cache
+    return self._class(self._servers, **self._options)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\cache\backends\redis.py", line 40, in __init__
+    import redis
+ModuleNotFoundError: No module named 'redis'
+ERROR 2025-06-09 10:25:21,789 basehttp 6180 12512 "GET /api/v1/auth/dashboard/overview/ HTTP/1.1" 500 120424
+INFO 2025-06-09 10:27:21,256 autoreload 17264 20248 Watching for file changes with StatReloader
+WARNING 2025-06-09 10:27:33,107 log 17264 27736 Not Found: /
+WARNING 2025-06-09 10:27:33,110 basehttp 17264 27736 "GET / HTTP/1.1" 404 4140
+WARNING 2025-06-09 10:27:33,592 log 17264 27736 Not Found: /favicon.ico
+WARNING 2025-06-09 10:27:33,595 basehttp 17264 27736 "GET /favicon.ico HTTP/1.1" 404 4191
+INFO 2025-06-09 10:27:38,252 basehttp 17264 27736 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-06-09 10:27:38,474 basehttp 17264 27736 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4184
+INFO 2025-06-09 10:27:40,283 basehttp 17264 15620 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-06-09 10:27:40,364 basehttp 17264 23808 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-06-09 10:27:40,379 basehttp 17264 10488 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+INFO 2025-06-09 10:27:40,386 basehttp 17264 27736 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+INFO 2025-06-09 10:27:40,387 basehttp 17264 17336 "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-06-09 10:27:40,418 basehttp 17264 20328 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+INFO 2025-06-09 10:27:40,462 basehttp 17264 27736 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-06-09 10:29:19,430 basehttp 17264 4876 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 10:29:19,618 basehttp 17264 4876 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 10:30:48,814 basehttp 17264 4876 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 10:30:49,289 basehttp 17264 4876 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+WARNING 2025-06-09 10:31:14,773 log 17264 17908 Not Found: /api/placeholder/16/12
+WARNING 2025-06-09 10:31:14,774 basehttp 17264 17908 "GET /api/placeholder/16/12 HTTP/1.1" 404 4221
+INFO 2025-06-09 10:31:59,299 basehttp 17264 4876 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 10:31:59,684 basehttp 17264 4876 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 10:34:03,664 basehttp 17264 4876 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 10:34:04,031 basehttp 17264 4876 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 10:36:02,949 basehttp 17264 4876 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 10:36:03,237 basehttp 17264 4876 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 10:40:50,525 basehttp 17264 4876 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 10:40:50,937 basehttp 17264 4876 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 10:48:12,216 basehttp 17264 20536 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 10:48:12,422 basehttp 17264 20536 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 10:49:04,149 basehttp 17264 20536 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 10:49:04,489 basehttp 17264 20536 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 10:56:05,079 basehttp 17264 12448 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 10:56:05,494 basehttp 17264 12448 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+WARNING 2025-06-09 10:56:49,301 log 17264 15728 Not Found: /api/agriculture/farmers/
+WARNING 2025-06-09 10:56:49,311 basehttp 17264 15728 "GET /api/agriculture/farmers/ HTTP/1.1" 404 4230
+WARNING 2025-06-09 10:56:50,436 log 17264 29540 Not Found: /api/agriculture/farmers/
+WARNING 2025-06-09 10:56:50,439 basehttp 17264 29540 "GET /api/agriculture/farmers/ HTTP/1.1" 404 4230
+WARNING 2025-06-09 10:57:16,723 log 17264 9316 Not Found: /api/agriculture/farmers/
+WARNING 2025-06-09 10:57:16,729 basehttp 17264 9316 "GET /api/agriculture/farmers/ HTTP/1.1" 404 4230
+WARNING 2025-06-09 10:57:18,389 log 17264 26820 Not Found: /api/agriculture/farmers/
+WARNING 2025-06-09 10:57:18,392 basehttp 17264 26820 "GET /api/agriculture/farmers/ HTTP/1.1" 404 4230
+WARNING 2025-06-09 10:58:53,113 log 17264 21256 Not Found: /api/agriculture/farmers/
+WARNING 2025-06-09 10:58:53,119 basehttp 17264 21256 "POST /api/agriculture/farmers/ HTTP/1.1" 404 4231
+WARNING 2025-06-09 10:58:55,869 log 17264 24784 Not Found: /api/agriculture/farmers/
+WARNING 2025-06-09 10:58:55,869 basehttp 17264 24784 "POST /api/agriculture/farmers/ HTTP/1.1" 404 4231
+WARNING 2025-06-09 10:58:56,943 log 17264 2084 Not Found: /api/agriculture/farmers/
+WARNING 2025-06-09 10:58:56,943 basehttp 17264 2084 "POST /api/agriculture/farmers/ HTTP/1.1" 404 4231
+WARNING 2025-06-09 10:58:57,174 log 17264 23004 Not Found: /api/agriculture/farmers/
+WARNING 2025-06-09 10:58:57,174 basehttp 17264 23004 "POST /api/agriculture/farmers/ HTTP/1.1" 404 4231
+WARNING 2025-06-09 10:58:57,423 log 17264 1548 Not Found: /api/agriculture/farmers/
+WARNING 2025-06-09 10:58:57,423 basehttp 17264 1548 "POST /api/agriculture/farmers/ HTTP/1.1" 404 4231
+INFO 2025-06-09 10:59:07,429 basehttp 17264 12448 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 10:59:07,639 basehttp 17264 12448 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+WARNING 2025-06-09 10:59:13,801 log 17264 15724 Not Found: /api/agriculture/farmers/
+WARNING 2025-06-09 10:59:13,809 basehttp 17264 15724 "POST /api/agriculture/farmers/ HTTP/1.1" 404 4231
+INFO 2025-06-09 11:00:40,179 autoreload 17264 20248 C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\apps\agriculture\serializers.py changed, reloading.
+INFO 2025-06-09 11:00:42,207 autoreload 14216 5216 Watching for file changes with StatReloader
+INFO 2025-06-09 11:01:26,769 autoreload 13120 14856 Watching for file changes with StatReloader
+INFO 2025-06-09 11:01:33,575 basehttp 13120 13880 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+WARNING 2025-06-09 11:01:33,802 log 13120 21808 Not Found: /api/agriculture/farmers/
+WARNING 2025-06-09 11:01:33,809 basehttp 13120 21808 "GET /api/agriculture/farmers/ HTTP/1.1" 404 4230
+INFO 2025-06-09 11:01:33,841 basehttp 13120 13880 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+WARNING 2025-06-09 11:01:34,879 log 13120 13736 Not Found: /api/agriculture/farmers/
+WARNING 2025-06-09 11:01:34,879 basehttp 13120 13736 "GET /api/agriculture/farmers/ HTTP/1.1" 404 4230
+WARNING 2025-06-09 11:02:24,709 log 13120 8460 Not Found: /api/agriculture/farmers/
+WARNING 2025-06-09 11:02:24,712 basehttp 13120 8460 "POST /api/agriculture/farmers/ HTTP/1.1" 404 4231
+WARNING 2025-06-09 11:02:32,574 log 13120 24420 Not Found: /api/agriculture/farmers/
+WARNING 2025-06-09 11:02:32,574 basehttp 13120 24420 "POST /api/agriculture/farmers/ HTTP/1.1" 404 4231
+WARNING 2025-06-09 11:02:32,780 log 13120 5016 Not Found: /api/agriculture/farmers/
+WARNING 2025-06-09 11:02:32,788 basehttp 13120 5016 "POST /api/agriculture/farmers/ HTTP/1.1" 404 4231
+WARNING 2025-06-09 11:02:32,980 log 13120 18840 Not Found: /api/agriculture/farmers/
+WARNING 2025-06-09 11:02:32,980 basehttp 13120 18840 "POST /api/agriculture/farmers/ HTTP/1.1" 404 4231
+INFO 2025-06-09 11:03:22,099 basehttp 13120 17904 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-06-09 11:03:22,904 basehttp 13120 17904 "GET /admin/ HTTP/1.1" 200 22102
+INFO 2025-06-09 11:03:23,119 basehttp 13120 19036 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-06-09 11:03:23,119 basehttp 13120 17904 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-06-09 11:03:23,129 basehttp 13120 20788 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-06-09 11:03:23,129 basehttp 13120 21808 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-06-09 11:03:23,129 basehttp 13120 7112 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-06-09 11:03:23,249 basehttp 13120 7112 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-06-09 11:03:23,629 basehttp 13120 10652 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-06-09 11:03:23,709 basehttp 13120 7112 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-06-09 11:03:23,709 basehttp 13120 10652 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-06-09 11:03:29,199 basehttp 13120 9480 "GET /admin/agriculture/farmer/ HTTP/1.1" 200 21421
+INFO 2025-06-09 11:03:29,407 basehttp 13120 9480 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-06-09 11:03:29,424 basehttp 13120 14652 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-06-09 11:03:29,429 basehttp 13120 7456 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-06-09 11:03:29,441 basehttp 13120 14212 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-06-09 11:03:29,449 basehttp 13120 9480 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-06-09 11:03:29,505 basehttp 13120 5500 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-06-09 11:03:29,655 basehttp 13120 14212 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-06-09 11:03:29,655 basehttp 13120 14652 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-06-09 11:03:29,687 basehttp 13120 7456 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-06-09 11:03:29,775 basehttp 13120 9480 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-06-09 11:03:29,869 basehttp 13120 20204 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-09 11:03:29,959 basehttp 13120 5500 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-06-09 11:03:30,059 basehttp 13120 7456 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-06-09 11:03:30,067 basehttp 13120 5500 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-06-09 11:03:33,843 basehttp 13120 5500 "GET /admin/agriculture/farmer/add/ HTTP/1.1" 200 36881
+INFO 2025-06-09 11:03:34,055 basehttp 13120 14212 "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15709
+INFO 2025-06-09 11:03:34,082 basehttp 13120 14652 "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2025-06-09 11:03:34,135 basehttp 13120 5500 "GET /static/admin/css/forms.css HTTP/1.1" 200 8525
+INFO 2025-06-09 11:03:34,139 basehttp 13120 9480 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2025-06-09 11:03:34,157 basehttp 13120 20204 "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2025-06-09 11:03:34,357 basehttp 13120 14212 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-06-09 11:03:34,373 basehttp 13120 5500 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11991
+INFO 2025-06-09 11:03:34,492 basehttp 13120 5500 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-06-09 11:03:34,539 basehttp 13120 7456 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-09 11:03:34,807 basehttp 13120 7456 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2025-06-09 11:03:34,829 basehttp 13120 5500 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO 2025-06-09 11:03:45,678 basehttp 13120 5372 "GET /admin/agriculture/crop/ HTTP/1.1" 200 20972
+INFO 2025-06-09 11:03:45,964 basehttp 13120 5372 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-09 11:03:48,209 basehttp 13120 8492 "GET /admin/agriculture/crop/add/ HTTP/1.1" 200 27749
+INFO 2025-06-09 11:03:48,419 basehttp 13120 8492 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2025-06-09 11:04:36,274 log 13120 18172 Internal Server Error: /admin/agriculture/crop/add/
+Traceback (most recent call last):
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\db\backends\base\base.py", line 303, in _commit
+    return self.connection.commit()
+psycopg2.errors.ForeignKeyViolation: insert or update on table "django_admin_log" violates foreign key constraint "django_admin_log_user_id_c564eba6_fk_auth_user_id"
+DETAIL:  Key (user_id)=(3) is not present in table "auth_user".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\contrib\admin\options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\contrib\admin\sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\contrib\admin\options.py", line 1984, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\contrib\admin\options.py", line 1842, in changeform_view
+    with transaction.atomic(using=router.db_for_write(self.model)):
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\db\transaction.py", line 263, in __exit__
+    connection.commit()
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\db\backends\base\base.py", line 327, in commit
+    self._commit()
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\db\backends\base\base.py", line 302, in _commit
+    with debug_transaction(self, "COMMIT"), self.wrap_database_errors:
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\db\backends\base\base.py", line 303, in _commit
+    return self.connection.commit()
+django.db.utils.IntegrityError: insert or update on table "django_admin_log" violates foreign key constraint "django_admin_log_user_id_c564eba6_fk_auth_user_id"
+DETAIL:  Key (user_id)=(3) is not present in table "auth_user".
+
+ERROR 2025-06-09 11:04:36,301 basehttp 13120 18172 "POST /admin/agriculture/crop/add/ HTTP/1.1" 500 154967
+WARNING 2025-06-09 11:04:44,189 log 13120 25220 Not Found: /api/agriculture/farmers/
+WARNING 2025-06-09 11:04:44,189 basehttp 13120 25220 "POST /api/agriculture/farmers/ HTTP/1.1" 404 4231
+WARNING 2025-06-09 11:04:54,559 log 13120 26064 Not Found: /api/agriculture/farmers/
+WARNING 2025-06-09 11:04:54,559 basehttp 13120 26064 "GET /api/agriculture/farmers/ HTTP/1.1" 404 4230
+WARNING 2025-06-09 11:04:55,811 log 13120 748 Not Found: /api/agriculture/farmers/
+WARNING 2025-06-09 11:04:55,813 basehttp 13120 748 "GET /api/agriculture/farmers/ HTTP/1.1" 404 4230

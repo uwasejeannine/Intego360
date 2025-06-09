@@ -54,7 +54,7 @@ class FarmerSerializer(serializers.ModelSerializer):
             'cooperative_name', 'has_bank_account', 'bank_name', 'account_number',
             'is_active', 'total_productions', 'average_yield', 'created_at', 'updated_at'
         ]
-        read_only_fields = ['farmer_id', 'full_name', 'age']
+        read_only_fields = ['full_name', 'age']
 
     def get_main_crops_names(self, obj):
         return [crop.name for crop in obj.main_crops.all()]

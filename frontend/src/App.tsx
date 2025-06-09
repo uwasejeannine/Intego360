@@ -8,6 +8,7 @@ import SignupPage from './pages/SignupPage';
 import DashboardLayout from './components/layout/DashboardLayout';
 import Dashboard from './pages/Dashboard';
 import Agriculture from './pages/Agriculture';
+import Farmers from './pages/agriculture/Farmers'; // Add this import
 import Health from './pages/Health';
 import Education from './pages/Education';
 import { SectorProvider } from './contexts/SectorContext';
@@ -95,6 +96,7 @@ const AppRoutes: React.FC = () => {
               <Routes>
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/agriculture" element={<Agriculture />} />
+                <Route path="/farmers" element={<Farmers />} /> {/* Add this route */}
                 <Route path="/health" element={<Health />} />
                 <Route path="/education" element={<Education />} />
                 {/* <Route path="/alerts" element={<Alerts />} />
