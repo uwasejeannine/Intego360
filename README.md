@@ -146,7 +146,15 @@ Replace `your_secret_key_here` and `your_database_url_here` with your actual sec
 
 ## Project Interface Screenshots
 
-(Please add screenshots of your running application here)
+<img width="950" alt="image" src="https://github.com/user-attachments/assets/37261edb-f6d9-4fa2-8890-e360e49d53bc" />
+<img width="950" alt="image" src="https://github.com/user-attachments/assets/9e0cebab-8caf-424d-bae8-d4bd5afe4c5b" />
+<img width="955" alt="image" src="https://github.com/user-attachments/assets/b6ec2752-23bf-4a5a-bfa3-eff370b76f7a" />
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/3aee4ab3-338c-48f1-8ca2-3509630c36bb" />
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/aded597c-7d6c-4399-a6ab-466744434503" />
+
+
+
+
 
 ---
 
