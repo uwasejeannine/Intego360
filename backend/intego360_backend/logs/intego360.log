@@ -7726,3 +7726,91 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'redis'
 ERROR 2025-06-09 14:33:59,763 basehttp 17340 19164 "GET /api/v1/auth/dashboard/overview/ HTTP/1.1" 500 120424
 INFO 2025-06-09 14:43:02,328 autoreload 28320 4808 Watching for file changes with StatReloader
+INFO 2025-06-09 15:38:18,107 autoreload 18008 28624 Watching for file changes with StatReloader
+INFO 2025-06-09 15:38:27,477 views 18008 22440 Login attempt - Headers: {'Content-Length': '69', 'Content-Type': 'application/json', 'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Sec-Ch-Ua-Platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Google Chrome";v="137", "Chromium";v="137", "Not/A)Brand";v="24"', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:3000', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:3000/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9'}
+INFO 2025-06-09 15:38:27,484 views 18008 22440 Login attempt - Body: b'{"username":"Jeannine","password":"GanzAfrica6!","remember_me":false}'
+INFO 2025-06-09 15:38:27,490 views 18008 22440 Login attempt - Data: {'username': 'Jeannine', 'password': 'GanzAfrica6!', 'remember_me': False}
+INFO 2025-06-09 15:38:27,495 views 18008 22440 Login attempt - Content-Type: application/json
+INFO 2025-06-09 15:38:27,500 views 18008 22440 Serializer data: {'username': 'Jeannine', 'password': 'GanzAfrica6!', 'remember_me': False}
+INFO 2025-06-09 15:38:28,902 basehttp 18008 22440 "POST /api/v1/auth/login/ HTTP/1.1" 200 836
+INFO 2025-06-09 15:38:30,198 basehttp 18008 1108 "POST /api/v1/auth/dashboard/log_view/ HTTP/1.1" 200 35
+INFO 2025-06-09 15:38:30,627 basehttp 18008 18484 "POST /api/v1/auth/dashboard/log_view/ HTTP/1.1" 200 35
+INFO 2025-06-09 15:38:30,652 basehttp 18008 26160 "GET /api/v1/auth/dashboard/recent_activities/ HTTP/1.1" 200 4165
+ERROR 2025-06-09 15:38:30,768 log 18008 22440 Internal Server Error: /api/v1/auth/dashboard/overview/
+Traceback (most recent call last):
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\apps\authentication\views.py", line 601, in overview
+    stats = cache.get(cache_key)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\cache\backends\redis.py", line 188, in get
+    return self._cache.get(key, default)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\cache\backends\redis.py", line 173, in _cache
+    return self._class(self._servers, **self._options)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\cache\backends\redis.py", line 40, in __init__
+    import redis
+ModuleNotFoundError: No module named 'redis'
+ERROR 2025-06-09 15:38:30,810 basehttp 18008 22440 "GET /api/v1/auth/dashboard/overview/ HTTP/1.1" 500 120424
+ERROR 2025-06-09 15:38:32,520 log 18008 22440 Internal Server Error: /api/v1/auth/dashboard/overview/
+Traceback (most recent call last):
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\apps\authentication\views.py", line 601, in overview
+    stats = cache.get(cache_key)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\cache\backends\redis.py", line 188, in get
+    return self._cache.get(key, default)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\cache\backends\redis.py", line 173, in _cache
+    return self._class(self._servers, **self._options)
+  File "C:\Users\GanzAfrica\Desktop\Intego360\backend\intego360_backend\venv\lib\site-packages\django\core\cache\backends\redis.py", line 40, in __init__
+    import redis
+ModuleNotFoundError: No module named 'redis'
+ERROR 2025-06-09 15:38:32,536 basehttp 18008 22440 "GET /api/v1/auth/dashboard/overview/ HTTP/1.1" 500 120424
+WARNING 2025-06-09 15:40:14,089 log 18008 2832 Not Found: /api/agriculture/farmers/
+WARNING 2025-06-09 15:40:14,103 basehttp 18008 2832 "GET /api/agriculture/farmers/ HTTP/1.1" 404 4230
+WARNING 2025-06-09 15:40:15,980 log 18008 28096 Not Found: /api/agriculture/farmers/
+WARNING 2025-06-09 15:40:15,990 basehttp 18008 28096 "GET /api/agriculture/farmers/ HTTP/1.1" 404 4230
+INFO 2025-06-09 15:58:39,408 basehttp 18008 25292 "OPTIONS /api/v1/auth/users/me/ HTTP/1.1" 200 0
+INFO 2025-06-09 15:58:39,408 basehttp 18008 15840 "OPTIONS /api/v1/auth/users/me/ HTTP/1.1" 200 0
+INFO 2025-06-09 15:58:40,224 basehttp 18008 15840 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 15:58:40,406 basehttp 18008 15840 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 15:58:44,243 basehttp 18008 15840 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 15:58:44,503 basehttp 18008 15840 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 15:58:48,334 basehttp 18008 15840 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 15:58:48,630 basehttp 18008 15840 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 15:58:55,706 basehttp 18008 15840 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 15:58:55,913 basehttp 18008 15840 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 15:59:03,403 basehttp 18008 15840 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 15:59:03,690 basehttp 18008 15840 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 15:59:09,393 basehttp 18008 15840 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
+INFO 2025-06-09 15:59:09,653 basehttp 18008 15840 "GET /api/v1/auth/users/me/ HTTP/1.1" 200 1142
