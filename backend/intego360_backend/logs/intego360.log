@@ -7725,3 +7725,4 @@ Traceback (most recent call last):
     import redis
 ModuleNotFoundError: No module named 'redis'
 ERROR 2025-06-09 14:33:59,763 basehttp 17340 19164 "GET /api/v1/auth/dashboard/overview/ HTTP/1.1" 500 120424
+INFO 2025-06-09 14:43:02,328 autoreload 28320 4808 Watching for file changes with StatReloader
