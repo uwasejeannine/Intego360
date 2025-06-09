@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Intego360 is a comprehensive agricultural management system designed to streamline various aspects of farming operations. It comprises a React/TypeScript frontend for an intuitive user interface and a Django/Django Rest Framework (DRF) backend for robust data management and API services.
+Intego360 is a centralized digital platform that simplifies the management of agriculture, health, and education data in one place. It helps organizations track activities, monitor progress, and make informed decisions through real-time data, smart alerts, and AI-powered insights. By bringing everything together, Intego360 improves efficiency, saves time, and supports better planning for impactful service delivery.
 
 ## Description
 
