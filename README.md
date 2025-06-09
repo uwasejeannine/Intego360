@@ -6,12 +6,25 @@ Intego360 is a comprehensive agricultural management system designed to streamli
 
 ## Features
 
+### Agriculture
 *   **Farmer Management**: Track and manage farmer profiles.
 *   **Crop Management**: Keep records of different crops.
 *   **Production Tracking**: Monitor agricultural production.
 *   **Market Price Analysis**: Stay updated with market prices.
 *   **Alert System**: Receive timely alerts for critical events.
 *   **Extension Services**: Manage extension activities.
+
+### Health
+*   **Patient Management**: Track and manage patient profiles.
+*   **Medical Records**: Keep records of patient medical history.
+*   **Appointment Scheduling**: Manage patient appointments.
+*   **Health Analytics**: Analyze health data for insights.
+
+### Education
+*   **Student Management**: Track and manage student profiles.
+*   **Course Management**: Keep records of different courses.
+*   **Attendance Tracking**: Monitor student attendance.
+*   **Performance Analytics**: Analyze student performance data.
 
 ## Prerequisites
 
